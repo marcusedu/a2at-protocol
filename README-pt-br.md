@@ -40,7 +40,7 @@ Criar um **túnel temporário** entre o aplicativo e o agente de IA do usuário,
 
 **Draft v0.1** — Este é um protocolo aberto em fase inicial, buscando feedbacks da comunidade, provedores de IA e desenvolvedores.
 
-[Leia o Whitepaper completo](./a2at-whitepaper.md)
+[Leia o Whitepaper completo](./a2at-whitepaper-pt-br.md)
 
 ## Como Participar
 
