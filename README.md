@@ -48,7 +48,7 @@ For **users**:
 
 **Draft v0.1** — This is an open proposal seeking feedback from the community, AI providers, and developers.
 
-[Read the full Whitepaper](./a2at-whitepaper.md)
+[Read the full Whitepaper](./a2at-whitepaper-en.md)
 
 ## Get Involved
 
