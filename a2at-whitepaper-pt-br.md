@@ -226,33 +226,13 @@ O A2AT não pode ser implantado unilateralmente por uma aplicação contra um cl
 ---
 
 ## Referências
-
-$$1$$
-
- IETF RFC 9449 — *OAuth 2.0 Demonstrating Proof-of-Possession (DPoP)*
-
-$$2$$
-
- IETF RFC 6749 / OAuth 2.1 (draft) — *The OAuth Authorization Framework*
-
-$$3$$
-
- Anthropic — Atualização dos Termos de Serviço sobre tokens OAuth de assinatura em ferramentas de terceiros, Fevereiro–Abril de 2026.
-
-$$4$$
-
- OpenAI — *Apps SDK: Guide to Authentication and User Consent*
-
-$$5$$
-
- Especificação do Model Context Protocol (MCP).
-
-$$6$$
-
- Signal Protocol / Noise Protocol Framework — justificativa de design para troca de chaves efêmeras com segurança de encaminhamento.
+1. IETF RFC 9449 — *OAuth 2.0 Demonstrating Proof-of-Possession (DPoP)*
+2. IETF RFC 6749 / OAuth 2.1 (draft) — *The OAuth Authorization Framework*
+3. Anthropic — Atualização dos Termos de Serviço sobre tokens OAuth de assinatura em ferramentas de terceiros, Fevereiro–Abril de 2026.
+4. OpenAI — *Apps SDK: Guide to Authentication and User Consent*
+5. Especificação do Model Context Protocol (MCP).
+6. Signal Protocol / Noise Protocol Framework — justificativa de design para troca de chaves efêmeras com segurança de encaminhamento.
 
 ---
 
 *Este é um rascunho experimental (v0.1) destinado a solicitar comentários e revisões preliminares.*
-
-```
