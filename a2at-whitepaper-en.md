@@ -3,7 +3,7 @@
 
 **Status of this Document:** Informational / Draft Proposal (pre-standardization)
 **Category:** Experimental
-**Author:** [Your Name] — [Your Affiliation / Independent]
+**Author:** Marcus Duarte — Independent
 **Date:** July 2026
 **Version:** 0.1 (draft)
 
