@@ -3,7 +3,7 @@
 
 **Status of this Document:** Informational / Draft Proposal (pre-standardization)
 **Category:** Experimental
-**Author:** Marcus Duarte — Independent
+**Author:** [Your Name] — [Your Affiliation / Independent]
 **Date:** July 2026
 **Version:** 0.1 (draft)
 
@@ -176,6 +176,19 @@ A2AT is deliberately not a reinvention. It composes:
 - Standard **mobile platform attestation APIs** for App identity.
 
 The contribution of A2AT is not new cryptography — it is defining the *consent, audit, and confused-deputy* semantics specific to the App→Agent direction, which none of the above standards address on their own.
+
+### 12.1 Relationship to the Agent Client Protocol (ACP)
+
+The Agent Client Protocol (ACP), published by Zed Industries in August 2025, standardizes communication between a code editor and a coding agent over JSON-RPC, typically spawned as a local subprocess. ACP is structurally close to A2AT — it also formalizes an "application calls the agent" direction, with session lifecycle, streaming, and a tool-call permission system.
+
+The distinction is not developer-tooling versus consumer-facing UI; that is a *consequence*, not the underlying cause. The underlying cause is the **trust domain** each protocol assumes:
+
+- ACP assumes a single trust domain: the same user selects, installs, and authenticates both the editor and the agent. There is no adversarial third party between them, so ACP does not need — and does not define — sender-constrained ephemeral session keys with forward secrecy, application attestation, scope-restricted consent resistant to manipulation, or a tamper-evident, co-signed audit log visible to a non-technical end user.
+- A2AT assumes two independent, mutually unfamiliar trust domains: a third-party App (a different vendor, potentially untrusted) requesting scoped, revocable access to an Agent the Principal already owns and trusts (a different vendor again). Because the App may be malicious or compromised, A2AT requires the security primitives listed above as a hard requirement, not an optional hardening.
+
+A useful test for this distinction: even a technically sophisticated developer using a third-party App (not one they authored themselves) to reach their own ChatGPT/Gemini/Claude account would still need attestation and scoped consent, because the App remains an untrusted third party regardless of the Principal's technical skill. The simplified, non-technical-friendly authorization surface of A2AT is a consequence of who typically uses consumer applications — it is not the reason the security primitives exist.
+
+Because the two protocols address different layers of the same general direction, A2AT SHOULD be positioned as complementary rather than competing: ACP (or a similar session/tool-call transport) could plausibly serve as the underlying transport layer for an A2AT session, with A2AT contributing the cross-trust-domain consent, attestation, and audit semantics that ACP's threat model does not require.
 
 ---
 
